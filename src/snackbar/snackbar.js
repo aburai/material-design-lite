@@ -77,6 +77,7 @@
    */
   MaterialSnackbar.prototype.displaySnackbar_ = function() {
     this.element_.setAttribute('aria-hidden', 'true');
+    this.element_.setAttribute('data-type', this.type_);
 
     if (this.actionHandler_) {
       this.actionElement_.textContent = this.actionText_;
@@ -88,7 +89,6 @@
     this.element_.classList.add(this.cssClasses_.ACTIVE);
     this.element_.setAttribute('aria-hidden', 'false');
     this.timeoutID_ = setTimeout(this.cleanup_.bind(this), this.timeout_);
-
   };
 
   /**
@@ -113,6 +113,7 @@
     } else {
       this.active = true;
       this.message_ = data['message'];
+      this.type_ = data['type'];
       if (data['timeout']) {
         this.timeout_ = data['timeout'];
       } else {
@@ -172,6 +173,7 @@
       }
       this.actionHandler_ = undefined;
       this.message_ = undefined;
+      this.type_ = undefined;
       this.actionText_ = undefined;
       this.timeoutID_ = undefined;
       this.active = false;
