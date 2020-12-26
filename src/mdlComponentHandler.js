@@ -467,10 +467,8 @@ componentHandler.Component;  // jshint ignore:line
 componentHandler['upgradeDom'] = componentHandler.upgradeDom;
 componentHandler['upgradeElement'] = componentHandler.upgradeElement;
 componentHandler['upgradeElements'] = componentHandler.upgradeElements;
-componentHandler['upgradeAllRegistered'] =
-    componentHandler.upgradeAllRegistered;
-componentHandler['registerUpgradedCallback'] =
-    componentHandler.registerUpgradedCallback;
+componentHandler['upgradeAllRegistered'] = componentHandler.upgradeAllRegistered;
+componentHandler['registerUpgradedCallback'] = componentHandler.registerUpgradedCallback;
 componentHandler['register'] = componentHandler.register;
 componentHandler['downgradeElements'] = componentHandler.downgradeElements;
 window.componentHandler = componentHandler;

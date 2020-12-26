@@ -157,7 +157,7 @@
   };
 
   /**
-   * Cleanup the snackbar event listeners and accessiblity attributes.
+   * Cleanup the snackbar event listeners and accessibility attributes.
    *
    * @private
    */
