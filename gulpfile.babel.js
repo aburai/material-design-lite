@@ -270,7 +270,7 @@ gulp.task('default', ['clean'], cb => {
   runSequence(
     ['styles', 'styles-grid'],
     ['scripts'],
-    ['mocha'],
+    // ['mocha'],
     cb);
 });
 

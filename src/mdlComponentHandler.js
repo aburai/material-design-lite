@@ -84,6 +84,8 @@ var componentHandler = {
 componentHandler = (function() {
   'use strict';
 
+  // const supports = require('../utils/supports');
+
   /** @type {!Array<componentHandler.ComponentConfig>} */
   var registeredComponents_ = [];
 

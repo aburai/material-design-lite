@@ -381,7 +381,7 @@
           // Also add/remove auxiliary class for styling of the compact version of
           // the header.
           this.content_.addEventListener('scroll',
-              this.contentScrollHandler_.bind(this));
+              this.contentScrollHandler_.bind(this), {passive: true});
           this.contentScrollHandler_();
         }
       }
@@ -500,7 +500,7 @@
           }
         }.bind(this);
 
-        this.tabBar_.addEventListener('scroll', tabUpdateHandler);
+        this.tabBar_.addEventListener('scroll', tabUpdateHandler, {passive: true});
         tabUpdateHandler();
 
         // Update tabs when the window resizes.

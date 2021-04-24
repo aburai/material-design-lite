@@ -36,7 +36,7 @@
       rightScroll.classList.add('disabled');
     }
   }
-  menuBar.addEventListener('scroll', updateScrollIndicator);
+  menuBar.addEventListener('scroll', updateScrollIndicator, {passive: true});
   updateScrollIndicator();
 
   function scrollMenuBar(delta) {
